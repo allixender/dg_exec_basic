@@ -1,0 +1,16 @@
+[package]
+name = "dg_exec_basic"
+version = "0.2.0"
+edition = "2021"
+authors = ["alexander.kmoch@ut.ee"]
+license = "MIT License"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+flatgeobuf = { version = "0.8.0", features = ["bytes"] }
+geo = "0.23.0"
+geo-types = { version = "0.7.7", features = ["serde"] }
+geojson = "0.24.0"
+geozero = { version = "0.9.5", features = ["wkt", "geojson", "geo-types", "bytes", "arrow2"] }
+tempfile = "3.3.0"
+wkt = { version = "0.10.3", features = ["serde"] }
